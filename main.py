@@ -8,7 +8,12 @@ app = Flask(__name__)
 #model = load_vgg()
 model = load_clnet()
 
+
 # 接続テスト用
+@app.route('/')
+def index():
+    return 'Hello World!'
+
 @app.route('/hello')
 def test():
     return jsonify({'message': 'Hello world'})
@@ -46,4 +51,4 @@ def predict_cln():
         return 'Cannot predict image.'
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(host='0.0.0.0', debug=False, port=5000)

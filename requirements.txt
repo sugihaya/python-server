@@ -1,0 +1,15 @@
+click==8.0.0
+dataclasses==0.8
+Flask==2.0.0
+gunicorn==20.1.0
+itsdangerous==2.0.0
+Jinja2==3.0.0
+MarkupSafe==2.0.0
+numpy==1.19.5
+Pillow==8.2.0
+six==1.16.0
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.8.1+cpu
+torchvision==0.9.1+cpu
+typing-extensions==3.10.0.0
+Werkzeug==2.0.0
