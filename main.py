@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from PIL import Image
 import io
-from model import load_vgg, preprocess_vgg, predict_vgg
+from models.model import load_vgg, preprocess_vgg, predict_vgg
 
 app = Flask(__name__)
 model = load_vgg()
